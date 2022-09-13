@@ -11,7 +11,7 @@ def func():
 	        if req.status_code == 200:
 	            print(True, link)
 	            with open("pages.txt","a") as Pages:
-	            	Pages.write(link)
+	            	Pages.write(f"{link}\n")
 	        else:
 	        	print(False, link)
 	except:
